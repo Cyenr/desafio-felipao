@@ -15,7 +15,7 @@ switch(true){
     case (xp <= 1000):
         nivel = 'Ferro';
         break;
-    case (xp <= 1001 && xp <= 2000):
+    case (xp >= 1001 && xp <= 2000):
         nivel = 'Bronze';
         break;
     case (xp >= 2001 && xp <= 5000):
