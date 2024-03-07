@@ -10,6 +10,7 @@ let nivel = ' '
 // Declaração de XP (aleatório) do personagem
 let xp = Math.floor(Math.random() * 10002) + 1;
 
+// Estrutura do código
 switch(true){
     case (xp <= 1000):
         nivel = 'Ferro';
@@ -17,19 +18,19 @@ switch(true){
     case (xp <= 1001 && xp <= 2000):
         nivel = 'Bronze';
         break;
-    case (xp <= 2001 && xp <= 5000):
+    case (xp >= 2001 && xp <= 5000):
         nivel = 'Prata';
         break;
-    case (xp <= 5001 && xp <= 7000):
+    case (xp >= 5001 && xp <= 7000):
         nivel = 'Ouro';
         break;
-    case (xp <= 7001 && xp <= 8000):
+    case (xp >= 7001 && xp <= 8000):
         nivel = 'Platina';
         break;
-    case (xp <= 8001 && xp <= 9000):
+    case (xp >= 8001 && xp <= 9000):
         nivel = 'Ascendente';
         break;
-    case (xp <= 9001 && xp <= 10000):
+    case (xp >= 9001 && xp <= 10000):
         nivel = 'Imortal';
         break;
     case (xp >= 10001):
@@ -37,4 +38,5 @@ switch(true){
         break;
 }
 
+//Output
 console.log('O herói, ou heroína, da vez é: ' + heroiEscolhido + '. Seu XP total é de ' + xp + ' e seu nível é ' + nivel);
